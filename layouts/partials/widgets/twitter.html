@@ -1,0 +1,23 @@
+{{/* Initialise */}}
+{{ $ := .root }}
+{{ $st := .page }}
+{{ $columns := $st.Params.design.columns | default "2" }}
+
+
+<div class="row">
+  {{ if ne $columns "1" }}
+    <div class="col-12 col-lg-3 section-heading">
+      {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+      {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+    </div>
+    <div class="col-12 col-lg-6">
+      <p><a class="twitter-timeline" data-theme='dark' href="https://twitter.com/{{$st.Params.twitter}}?ref_src=twsrc%5Etfw" data-chrome="noheader noborders transparent"data-tweet-limit="10">Tweets by ucsbspl</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+    </div>
+  {{ else }}
+    <div class="col-lg-12">
+      {{ with $st.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+      {{ with $st.Params.subtitle }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+      {{ $st.Content }}
+    </div>
+  {{ end }}
+</div>

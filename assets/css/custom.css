@@ -1,0 +1,265 @@
+/* =============== GENERAL ====================== */
+
+p, .row li, .article-container li {
+	font-size: 0.8rem;
+	text-align: justify;
+	margin-bottom: 0.2rem;
+}
+
+ul {
+	margin: 0;
+}
+
+h1 {
+	font-size: 1.2rem;
+	font-weight: bold !important;
+	margin-bottom: 2rem;
+	text-transform: uppercase;
+	color: #151515;
+}
+
+h2 {
+	font-size: 1.1rem;
+	font-weight: bold;
+	color: #151515;
+}
+
+h2:not(.no-underline) {
+	border-bottom: 1px solid #151515;
+}
+
+h3 {
+	margin-top: 1rem;
+	font-size: 1rem;
+	color: #151515;
+}
+
+h5 {
+	font-weight: normal;
+	font-size: 0.8rem;
+    line-height: 1.65;
+	text-align: justify;
+	margin: 0;
+	margin-bottom: 0.5rem;
+	color: #151515;
+}
+
+h6 {
+	margin: 0;
+	margin-bottom: 0.5rem;
+	color: #151515;
+}
+
+small {
+	font-size: 0.8em;
+	/*line-height: 50%;*/
+	margin-bottom: 0;
+}
+
+blockquote {
+	padding-right: 0.5rem;
+
+}
+
+a, p a, .row li a,
+h3.article-title a:hover {
+  color: #929292;
+  /*text-decoration: underline;*/
+  transition: color 0.6s ease;
+}
+
+p a:hover, .row li a:hover,
+p a:focus, .row li a:focus {
+  /*color: rgb(54, 54, 54);*/
+  color: #3d3d3f;
+  text-decoration: none;
+}
+
+p a.btn {
+	text-decoration: none !important;
+}
+
+.media.stream-item .stream-meta {
+    margin: 0;
+}
+
+.media.stream-item .article-title, .card-simple .article-title {
+    font-size: 1rem;
+}
+
+.section-title {
+	text-transform: none !important;
+	margin: 0 !important;
+}
+
+.margin-top-0 {
+	margin-top: 0;
+}
+
+
+
+/* =============== NEWS CAROUSEL ====================== */
+
+
+.carousel-indicators li {
+	background-color: #000;
+}
+
+.hero-title {
+	font-family: Montserrat,sans-serif;
+	font-size: 1.2rem;
+	font-weight: 700;
+	margin-top: 1rem;
+    margin-bottom: .5rem;
+    line-height: 1.25;
+	color: #151515;
+    transition: color .6s ease;
+    text-rendering: optimizeLegibility;
+    overflow-wrap: break-word;
+    hyphens: manual;
+}
+
+.hero-lead {
+	margin-top: 2px;
+    font-size: .8rem;
+    text-align: justify;
+    font-family: inherit;
+    line-height: inherit;
+    color: inherit;
+}
+
+.hero-preview {
+	text-align: center;
+}
+
+.wg-hero .btn {
+	padding: .3rem 1em;
+}
+
+.btn-light {
+	background-color: #eee;
+	border-color: #eee;
+}
+
+
+/* =============== RESEARCH =================== */
+
+.section-img {
+	width: 85%;
+	margin-top: 1rem;
+	text-align: left;
+	box-shadow: 4px 4px 5px #aaa;
+}
+
+.caption {
+	width: 85%;
+	font-size: 0.6rem;
+	text-align: justify;
+	line-height: normal;
+	margin: 0.5rem 0;
+	padding: 0;
+}
+
+
+/* =============== PEOPLE ====================== */
+
+.portrait {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portrait-title h2, .portrait-title h2 a {
+	margin-top: 0.2rem;
+	margin-bottom: 0;
+	color: inherit;
+}
+
+.portrait-title h2[itemprop="name"] {
+	margin-bottom: 0;
+}
+.portrait-title h3 {
+	font-size: 0.9rem;
+	margin-bottom: 1rem;
+	color: inherit;
+}
+.portrait-title h3[itemprop="pronouns"] {
+	font-size: 0.7rem;
+	margin-bottom: 0.4rem;
+}
+.portrait-title h5 {
+	font-size: 0.7rem;
+	line-height: 0.8rem;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+.author-card .card-title {
+	margin-bottom: 0.2rem;
+}
+.author-card .card-subtitle {
+	margin-bottom: 0;
+}
+
+.article-banner {
+	margin-left: auto;
+	margin-right: auto;
+	width: 80%;
+}
+
+.article-style {
+	text-align: justify;
+}
+
+#profile .bigger-icon {
+	font-size: 2.0rem;
+}
+#profile .big-icon {
+	font-size: 1.25rem;
+}
+
+#profile .network-icon {
+	margin-top: 0;
+}
+
+ul.network-icon {
+	margin-top: 0;
+	margin-bottom: 0rem;
+}
+
+ul {
+	margin-bottom: 0;
+}
+
+
+/* =============== TEACHING ====================== */
+
+#schedule td, #schedule th, #schedule li {
+	font-size: 0.65rem;
+}
+
+#schedule td, #schedule th {
+	padding: 4px;
+}
+
+#schedule ul {
+	padding-inline-start: 20px;
+}
+
+#schedule .gone {
+	font-style: italic;
+	color: #999999;
+}
+
+#schedule .finals {
+	font-weight: bold;
+}
+
+.due, .due a:hover {
+	color: red;
+}
+
+.due a {
+	color: #cc6666;
+}

@@ -1,0 +1,21 @@
+{{/* Initialise */}}
+{{ $ := .root }}
+{{ $st := .page }}
+
+
+<div class="margin-auto">
+  <h1 class="section-title" itemprop="headline">
+    {{ with $st.Params.title }}{{ . | markdownify | emojify }}{{ end }}
+  </h1>
+
+<div class="margin-auto">
+    {{ if $st.Params.section_img }}
+    <p>Our lab uses theories and methods from social psychology, cognitive neuroscience (e.g., fMRI, EEG), and related disciplines to investigate how people see and understand themselves and others. Most of our current work focuses on face processing, intergroup bias, and the interplay of social perception and mental and physical health.</p>
+    <img src="{{ printf "img/%s" $st.Params.section_img | absURL }}" class="section-img"/>
+    {{ end }}
+</div>
+    <p></p>
+     {{ if $st.Params.vimeo_id}}
+     <div class="margin-auto"> <p>We are located steps from &#x1F334 &#x1F60E &#x26F0 &#x1F3D6 <span> &#x1F3C4;&#x1F3FF;&#x200D;&#x2640;&#xFE0F;</span> &#x1F30A &#x1F42C in the <a href="https://www.psych.ucsb.edu"> Department of Psychological & Brain Sciences </a> at <a href="https://www.ucsb.edu"> UC Santa Barbara</a>. Check out the UCSB drone footage &#128071 to see our beautiful campus.</p> </div>
+		    <div style="padding:56.25% 0 0 0;position:relative;"> <iframe src="https://player.vimeo.com/video/396759143?color=c6e7ff&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:80%;" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+		      {{ end }}
